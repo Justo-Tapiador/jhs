@@ -18,7 +18,7 @@ npm install jhs
 ## Example
 
 The simplest use of this middleware module involves two parts:
-    ###1.      
+    ### 1      
         Write a webpage file with your favorite text editor, and name it with extension '.jhs'. 
         Save it to your web server root directory (or any other folder inside the root).
         Use delimiters <?jhs and ?> to insert javascript code into de html code (this code will be 
