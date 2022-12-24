@@ -45,7 +45,7 @@ The simplest use of this middleware module involves two parts:
         </html>
 
         2.  In your NODE.js server script, the JHS module must be required, instanciated and called, 
-        like any other middleware engine:
+            like any other middleware engine:
             ...
             const   JHS  = require('jhs'),
                     options = {root:"./wwwroot"},
