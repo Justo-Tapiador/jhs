@@ -80,4 +80,6 @@ If you find a security issue, please email me,  justo.tapiador@gmail.com.
 ## Contributing
 
 ## License
+Code released under the MIT license.
 
+Copyright (c) 2022 Justo Tapiador García
