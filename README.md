@@ -22,7 +22,7 @@ The simplest use of this middleware module involves two parts:
      1. Write a webpage file with your favorite text editor, and name it with extension '.jhs'. 
         Save it to your web server root directory (or any other folder inside the root).
         Use code delimiters <?jhs and ?> to insert javascript code into de html code (this code will be 
-        executed in the server side, not in the client side). As you already know, code delimiers 
+        executed in the server side, not in the client side). As you already know, code delimiters 
         <script> </script> are html tags where you can insert javascript code that will be executed 
         in the client side). There is a JHS 'echo' function which is similar to the PHP echo function. 
         Here it is a simple 'HELLO WORLD' page example, written with JHS [you may call it 'hello-world.jhs']:
