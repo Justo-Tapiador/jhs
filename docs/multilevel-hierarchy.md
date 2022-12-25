@@ -2,11 +2,10 @@
 
 **JHS has Multilevel Inheritance Hierarchy. What does it mean?**
 
-    Basically, it means Multilevel Inheritance Hierarchal Privileges. you can write 
+ Basically, it means Multilevel Inheritance Hierarchal Privileges. you can write 
  (echo) javascript code that can write javascript code that can write javascript 
  code ... that can write HTML code. 
-
-    Supose you create two instances of the JHS class. The first instance, that you 
+Supose you create two instances of the JHS class. The first instance, that you 
 call it 'execJHS_1', is about to be defined with level #1, and the second instance, 
 that you call it 'execJHS_0', will be defined with level 0# ,level #n has highier 
 privileges than level #(n-1). You do it by means of defining 
@@ -23,21 +22,16 @@ The second instance, 'execJHS_0', options JSON object  would be  obviously
 ```
 But, as there are not lower levels than #0, you don't need to specify the #0 in the 
 delimiters, and the default also admits this
-
 ```javascript
     const execJHS_0 = new JHS();
 ```
 And, if no delimiters array is provided, the level #0 is assumed as default. 
-
 ```javascript
 //Also
 delimiters:['<?jhs','?>'] // without specifing level number, refers to level #0.
 ```
-
 This configuration of two JHS instances in the server is called a 2-level Hierarchy JHS configuration.
- 
 Once these options are defined, you switch those two instances nested into theserver requests event listener, as follows:
-
 ```javascript
 server.on('request', (request, response)=>{
     var realFileName = request.url;
@@ -54,14 +48,10 @@ because the variable 'realFileName' is meant a path to a file (with exctension
 '.jhs') in the server root. If realFileName were a string with tJHS code content, 
 the second argument should be put to 'true'.This is the case in 'execJHS_0.parseFile', 
 because 'jhsResult1' is assumed to be JHS code, not a path to a file.
-
 In the JSON object 'flags' (that we put as third argument), you can parse whatever variables and/or constants are suitable for your purpose.
-
 If your server is not configured a with a 2-level configuration or highier, you can only dispatch JHS webpages in the #0 level (highier levels will yield error).
-
-    An example of a 2-level Hierarchy JHS file would be:
-
-
+An example of a 2-level Hierarchy JHS file would be:
+```javascript //mixed-html
     <?#1jhs 
     var date = new Date();
     var next_year = date.getFullYear()+1;
@@ -81,10 +71,10 @@ If your server is not configured a with a 2-level configuration or highier, you 
         </div>
     </body>
     </html>
-
+```
 And the resulted HTML code the server responded would be
 
-
+```html
     <!DOCTYPE html> 
     <html><head><meta charset="utf-8"></head>
     <body>
@@ -95,7 +85,7 @@ And the resulted HTML code the server responded would be
         </div>
     </body>
     </html>
-
+```
 So, in this example, you have defined (echoed) the variable 'str' fron level #1 to be use as part 
 of the JHS code in level #0.
 
