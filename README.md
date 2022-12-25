@@ -74,9 +74,8 @@ and called, like any other middleware engine:
 ```
 ## Security
 
-We're using JHS in production, as are many others, but please use common sense when 
-doing anything related to finances! We take no responsibility for your implementation 
-decisions. If you find a security issue, please email me,  justo.tapiador@gmail.com.
+You can use JHS module in production,  but please use common sense when doing anything related to finances! I take no responsibility for your implementation decisions.
+If you find a security issue, please email me,  justo.tapiador@gmail.com.
 
 ## Contributing
 
