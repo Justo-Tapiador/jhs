@@ -16,8 +16,7 @@ code delimiters options:
     const options_1 = {delimiters:['<?#1jhs','?#1>']};
     const execJHS_1 = new JHS(options_1);
 ```
-
-    The second instance, 'execJHS_0', options JSON object  would be  obviously
+The second instance, 'execJHS_0', options JSON object  would be  obviously
     
 ```javascript
     const options_0 = {delimiters:['<?#0jhs','?#0>']};
@@ -35,11 +34,9 @@ And, if no delimiters array is provided, the level #0 is assumed as default.
 delimiters:['<?jhs','?>'] // without specifing level number, refers to level #0.
 ```
 
-    This configuration of two JHS instances in the server is called a 2-level 
- Hierarchy JHS configuration.
+This configuration of two JHS instances in the server is called a 2-level Hierarchy JHS configuration.
  
-    Once these options are defined, you switch those two instances nested into 
-theserver requests event listener, as follows:
+Once these options are defined, you switch those two instances nested into theserver requests event listener, as follows:
 
 ```javascript
 server.on('request', (request, response)=>{
@@ -52,18 +49,15 @@ server.on('request', (request, response)=>{
 	}); 
 });
 ```
-
-    The secomd argument in the function execJHS_1.parseFile is put to 'false' 
+The secomd argument in the function execJHS_1.parseFile is put to 'false' 
 because the variable 'realFileName' is meant a path to a file (with exctension 
 '.jhs') in the server root. If realFileName were a string with tJHS code content, 
 the second argument should be put to 'true'.This is the case in 'execJHS_0.parseFile', 
 because 'jhsResult1' is assumed to be JHS code, not a path to a file.
 
-    In the JSON object 'flags' (that we put as third argument), you can parse whatever 
- variables and/or constants are suitable for your purpose.
+In the JSON object 'flags' (that we put as third argument), you can parse whatever variables and/or constants are suitable for your purpose.
 
-    If your server is not configured a with a 2-level configuration or highier, 
-you can only dispatch JHS webpages in the #0 level (highier levels will yield error).
+If your server is not configured a with a 2-level configuration or highier, you can only dispatch JHS webpages in the #0 level (highier levels will yield error).
 
     An example of a 2-level Hierarchy JHS file would be:
 
@@ -88,7 +82,7 @@ you can only dispatch JHS webpages in the #0 level (highier levels will yield er
     </body>
     </html>
 
-    And the resulted HTML code the server responded would be
+And the resulted HTML code the server responded would be
 
 
     <!DOCTYPE html> 
