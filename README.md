@@ -1,10 +1,14 @@
 # JHS
 
-**This is a fast and pure NODE.js server-side javascript module,  and a simple tool for making dynamic and interactive Web pages.**
+**This is a fast and pure NODE.js server-side javascript module,  and a simple tool for making dynamic 
+and interactive Web pages.**
 
 ## Principles
 
-JHS code is just pure javascript code, processed on a NODE.js web server by a JHS interpreter implemented as a NODE.js module. On a web server, the result of the interpreted and executed JHS code – which may be any type of data, such as generated HTML or binary image data – would form the whole or part of an HTTP response.
+JHS code is just pure javascript code, processed on a NODE.js web server by a JHS interpreter 
+implemented as a NODE.js module. On a web server, the result of the interpreted and executed 
+JHS code – which may be any type of data, such as generated HTML or binary image data – would 
+form the whole or part of an HTTP response.
 
 ## Get Started
 
@@ -18,15 +22,15 @@ The complete docs are hosted here: [JHS Documentation](docs/)
 ## Example
 
 The simplest use of this middleware module involves two parts:
-         
-     1. Write a webpage file with your favorite text editor, and name it with extension '.jhs'. 
-        Save it to your web server root directory (or any other folder inside the root).
-        Use code delimiters <?jhs and ?> to insert javascript code into de html code (this code will be 
-        executed in the server side, not in the client side). As you already know, code delimiters 
-        <script> </script> are html tags where you can insert javascript code that will be executed 
-        in the client side). There is a JHS 'echo' function which is similar to the PHP echo function. 
-        Here it is a simple 'HELLO WORLD' page example, written with JHS [you may call it 'hello-world.jhs']:
-
+1. Write a webpage file with your favorite text editor, and name it with extension '.jhs'. 
+Save it to your web server root directory (or any other folder inside the root).Use code 
+delimiters <?jhs and ?> to insert javascript code into de html code (this code will be 
+executed in the server side, not in the client side). As you already know, code delimiters 
+<script> </script> are html tags where you can insert javascript code that will be executed 
+in the client side). There is a JHS 'echo' function which is similar to the PHP echo function. 
+Here it is a simple 'HELLO WORLD' page example, written with JHS, you may call it 
+'hello-world.jhs':
+ ```javascript
         <?jhs 
             var str  = 'Hello world!';
             var date = new Date();
@@ -43,10 +47,10 @@ The simplest use of this middleware module involves two parts:
             </div>
         </body>
         </html>
-
-        2.  In your NODE.js server script, the JHS module must be required, instanciated and called, 
-            like any other middleware engine:
-            ...
+```
+2.  In your NODE.js server script, the JHS module must be required, instanciated and called, like any other middleware engine:
+```javascript
+             ...
             const   JHS  = require('jhs'),
                     options = {root:"./wwwroot"},
                     parse_options = {},
@@ -66,16 +70,12 @@ The simplest use of this middleware module involves two parts:
                 }); 
             ...
     });
-
-
-
-
-
-
+```
 ## Security
 
-We're using JHS in production, as are many others, but please use common sense when doing anything related to finances! We take no responsibility for your implementation decisions.
-If you find a security issue, please email me,  justo.tapiador@gmail.com.
+We're using JHS in production, as are many others, but please use common sense when doing anything 
+related to finances! We take no responsibility for your implementation decisions. If you find a 
+security issue, please email me,  justo.tapiador@gmail.com.
 
 ## Contributing
 
