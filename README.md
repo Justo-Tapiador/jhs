@@ -13,7 +13,7 @@ npm install jhs
 ```
 
 ## Documentation
-
+The complete docs are hosted here: [JHS Documentation](docs/) 
 
 ## Example
 
