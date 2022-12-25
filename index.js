@@ -1,5 +1,5 @@
 'use strict';
-var version = 'v' + require('./package.json').version;
+var version = 'v' + require('./package.json').version; 
 var versionGuard = function(version) {
   if (version !== undefined) {
     var message = 'More than one instance of JHS found. ' +
