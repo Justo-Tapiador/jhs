@@ -1,6 +1,6 @@
 # JHS
 
-**A pure NODE.js server javascript language, and a simple tool for making dynamic and interactive Web pages.**
+**This is a fast and pure NODE.js server-side javascript module,  and a simple tool for making dynamic and interactive Web pages.**
 
 ## Principles
 
