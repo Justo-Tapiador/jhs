@@ -2,7 +2,7 @@
 
 **JHS has Multilevel Inheritance Hierarchy. What does it mean?**
 
- Basically, it means Multilevel Inheritance Hierarchal Privileges. you can write 
+ Basically, it means Multilevel Inheritance Hierarchical Privileges. you can write 
  (echo) javascript code that can write javascript code that can write javascript 
  code ... that can write HTML code. 
 Supose you create two instances of the JHS class. The first instance, that you 
