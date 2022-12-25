@@ -51,7 +51,7 @@ because 'jhsResult1' is assumed to be JHS code, not a path to a file.
 In the JSON object 'flags' (that we put as third argument), you can parse whatever variables and/or constants are suitable for your purpose.
 If your server is not configured a with a 2-level configuration or highier, you can only dispatch JHS webpages in the #0 level (highier levels will yield error).
 An example of a 2-level Hierarchy JHS file would be:
-```javascript //mixed-html
+```javascript
     <?#1jhs 
     var date = new Date();
     var next_year = date.getFullYear()+1;
