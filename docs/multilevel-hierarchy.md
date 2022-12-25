@@ -18,9 +18,10 @@ code delimiters options:
 ```
 
     The second instance, 'execJHS_0', options JSON object  would be  obviously
-
+    
+```javascript
     const options_0 = {delimiters:['<?#0jhs','?#0>']};
-
+```
 But, as there are not lower levels than #0, you don't need to specify the #0 in the 
 delimiters, and the default also admits this
 
