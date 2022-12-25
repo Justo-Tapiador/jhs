@@ -26,7 +26,7 @@ delimiters, and the default also admits this
     const execJHS_0 = new JHS();
 ```
 And, if no delimiters array is provided, the level #0 is assumed as default. 
-```javascript
+```javascript 
 //Also
 delimiters:['<?jhs','?>'] // without specifing level number, refers to level #0.
 ```
