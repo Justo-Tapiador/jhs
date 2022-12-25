@@ -22,16 +22,14 @@ The complete docs are hosted here: [JHS Documentation](docs/)
 ## Example
 
 The simplest use of this middleware module involves two parts:
-1. Write a webpage file with your favorite text editor, and name it with extension '.jhs'. 
+Firstly, Write a webpage file with your favorite text editor, and name it with extension '.jhs'. 
 Save it to your web server root directory (or any other folder inside the root).Use code 
-delimiters 
-<?jhs and ?> 
-to insert javascript code into de html code (this code will be 
-executed in the server side, not in the client side). As you already know, code delimiters 
-<script> </script> are html tags where you can insert javascript code that will be executed 
-in the client side). There is a JHS 'echo' function which is similar to the PHP echo function. 
-Here it is a simple 'HELLO WORLD' page example, written with JHS, you may call it 
-'hello-world.jhs':
+delimiters <?jhs and ?> to insert javascript code into de html code (this code will be 
+executed in the server side, not in the client side). As you already know, code 
+delimiters <script> </script> are html tags where you can insert javascript code that 
+will be executed in the client side). There is a JHS 'echo' function which is similar 
+to the PHP echo function. Here it is a simple 'HELLO WORLD' page example, written with JHS, 
+you may call it 'hello-world.jhs':
  ```javascript
         <?jhs 
             var str  = 'Hello world!';
@@ -50,7 +48,8 @@ Here it is a simple 'HELLO WORLD' page example, written with JHS, you may call i
         </body>
         </html>
 ```
-2.  In your NODE.js server script, the JHS module must be required, instanciated and called, like any other middleware engine:
+Secondly, in your NODE.js server script, the JHS module must be required, instanciated 
+and called, like any other middleware engine:
 ```javascript
              ...
             const   JHS  = require('jhs'),
@@ -75,9 +74,9 @@ Here it is a simple 'HELLO WORLD' page example, written with JHS, you may call i
 ```
 ## Security
 
-We're using JHS in production, as are many others, but please use common sense when doing anything 
-related to finances! We take no responsibility for your implementation decisions. If you find a 
-security issue, please email me,  justo.tapiador@gmail.com.
+We're using JHS in production, as are many others, but please use common sense when 
+doing anything related to finances! We take no responsibility for your implementation 
+decisions. If you find a security issue, please email me,  justo.tapiador@gmail.com.
 
 ## Contributing
 
