@@ -31,7 +31,7 @@ And, if no delimiters array is provided, the level #0 is assumed as default.
 delimiters:['<?jhs','?>'] // without specifing level number, refers to level #0.
 ```
 This configuration of two JHS instances in the server is called a 2-level Hierarchy JHS configuration.
-Once these options are defined, you switch those two instances nested into theserver requests event listener, as follows:
+Once these options are defined, you switch those two instances nested into the server requests event listener, as follows:
 ```javascript
 server.on('request', (request, response)=>{
     var realFileName = request.url;
@@ -88,6 +88,4 @@ And the resulted HTML code the server responded would be
 ```
 So, in this example, you have defined (echoed) the variable 'str' fron level #1 to be use as part 
 of the JHS code in level #0.
-
-
 
