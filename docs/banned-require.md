@@ -34,8 +34,8 @@ the resulted webpage will be:
 
 ```smarty
 <html><head></head>
- <body>
-{error:true,file:'e-1.jhs',banned_require:'lib-y'};
+<body>
+{error:true, file:'e-1.jhs', banned_require:'lib-y'};
 </body>
 </html>
 ```
