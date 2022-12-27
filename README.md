@@ -19,6 +19,11 @@ npm install jhs
 ## Documentation
 The complete docs are hosted here: [JHS Documentation](docs/) 
 
+* [Some server configurations](docs/server-configurations.md)
+* [Multilevel hierarchical JHS Mode](docs/multilevel-hierarchy.md)
+* [Ban some required modules](docs/banned-require.md)
+
+
 ## Example
 
 The simplest use of this middleware module involves two parts:
