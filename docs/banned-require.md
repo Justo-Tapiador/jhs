@@ -33,7 +33,9 @@ const liby = require('lib-y')
 the resulted webpage will be:
 
 ```html
-{error:true,'e-1.jhs',banned_require:'lib-y'};
+<html><head></head><body>
+{error:true,file:'e-1.jhs',banned_require:'lib-y'};
+ </body></html>
 ```
 the error page will be displayed even the alleged function 'liby()' 
 is not called. 
