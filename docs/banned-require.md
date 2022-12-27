@@ -17,7 +17,7 @@ a JHS instance in your server script.
 
 Example: Assume the above list of banned modules is passed to your server. Then, the following JHS 
 script, that you call 'e-1.jhs', will yield an error in the generated webpage: 
-```jacasvript 
+```javascript 
 <?jhs
 const liby = require('lib-y')
 ?>
