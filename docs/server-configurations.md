@@ -4,13 +4,12 @@
 
  ```javascript
 const path = require('path'),
-       JHS = require('jhs'),
-      http = require("http"),
-        fs = require("fs"),
- root_path = path.join(__dirname, 'wwwroot'),
-      host = 'https://localhost',
-      port = process.env.PORT || "4000",
-      home = host+':'+port+'/';
+        JHS = require('jhs'),
+       http = require("http"),
+         fs = require("fs"),
+       host = 'https://localhost',
+       port = process.env.PORT || "4000",
+       home = host+':'+port+'/';
   
 var  flags    = {home: '.', path:'/',querystring:''},
      execJHS  = new JHS(),
