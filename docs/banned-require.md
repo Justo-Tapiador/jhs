@@ -32,7 +32,7 @@ const liby = require('lib-y')
 ```
 the resulted webpage will be:
 
-```smarty
+```nunjucks
 <html><head></head>
 <body>
 {error:true, file:'e-1.jhs', banned_require:'lib-y'};
