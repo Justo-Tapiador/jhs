@@ -4,7 +4,7 @@
 
  ```javascript
 const path = require('path'),
-       JHS = require('jhs');
+       JHS = require('jhs'),
       http = require("http"),
         fs = require("fs"),
  root_path = path.join(__dirname, 'wwwroot'),
@@ -13,8 +13,8 @@ const path = require('path'),
       home = host+':'+port+'/';
   
 var  flags    = {home: '.', path:'/',querystring:''},
-     execJHS = new JHS(),
-     options = {home:home,root:"./wwwroot",method:'GET'},
+     execJHS  = new JHS(),
+     options  = {home:home,root:"./wwwroot",method:'GET'},
      server   = http.createServer();
 
 server.listen(port, ()=>{
