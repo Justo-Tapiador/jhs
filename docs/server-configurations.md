@@ -7,7 +7,7 @@ const path = require('path'),
        JHS = require('jhs'),
       http = require("http"),
         fs = require("fs"),
-      host = 'https://localhost',
+      host = 'http://localhost',
       port = process.env.PORT || "4000",
       home = host+':'+port+'/';
   
