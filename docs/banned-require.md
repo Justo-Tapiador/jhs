@@ -1,7 +1,7 @@
 # Banned Require
 **You can prevent some NODEjs modules to be loaded in your JHS scripts**
 
-There are two nodejs modules that you are not allowed to require (include) in  a JHS script:
+There are two nodejs modules that you are not allowed to require (they are banned by default) in  a JHS script:
 These are: require ('vm') and require ('jhs'). In addition, you can ban other modules, too, 
 by adding an array of names of modules to be banned in the options JSON, when you are creating 
 a JHS instance in your server script.
