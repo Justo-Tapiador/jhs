@@ -2,7 +2,7 @@
 
 ## A simple 1-level hierarchy Server:
 
- ```javascript
+```javascript
 const path = require('path'),
         JHS = require('jhs'),
        http = require("http"),
@@ -46,5 +46,5 @@ server.on('request', function(request, response) {
           break;
          }
   });
- ```
+```
 
