@@ -12,9 +12,9 @@ const path = require('path'),
        home = host+':'+port+'/';
   
 var  flags    = {home: '.', path:'/',querystring:''},
-     execJHS  = new JHS(),
-     options  = {home:home,root:"./wwwroot",method:'GET'},
-     server   = http.createServer();
+      execJHS  = new JHS(),
+      options  = {home:home,root:"./wwwroot",method:'GET'},
+      server   = http.createServer();
 
 server.listen(port, ()=>{
       console.log(`\t\x1b[0m\x1b[92mListening to Requests\ton \x1b[0m\x1b[93m${home}\x1b[0m`);
