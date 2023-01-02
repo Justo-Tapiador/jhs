@@ -44,7 +44,7 @@ server.on('request', (request, response)=>{
 });
 ```
 The secomd argument in the function execJHS_1.parseFile is put to 'false' 
-because the variable 'realFileName' is meant a path to a file (with exctension 
+because the variable 'realFileName' is meant a path to a file (with extension 
 '.jhs') in the server root. If realFileName were a string with tJHS code content, 
 the second argument should be put to 'true'.This is the case in 'execJHS_0.parseFile', 
 because 'jhsResult1' is assumed to be JHS code, not a path to a file.
