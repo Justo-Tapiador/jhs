@@ -32,7 +32,7 @@ the result, once it is parsed, would be
 </html>
 ```
 because it is assumed there exists a file called 'fruits.txt'
-in the same path of the JHS script, and its content is:
+in the path where the server script is  of the JHS script, and its content is:
 ```javascript 
 <?jhs
 var a = 'oranges';
@@ -40,7 +40,7 @@ var b = 'apples';
 ?>
 ```
 There are lots of differences between the NODE.js require function and the method jhs_require.
-Firstly, the content in the file called by jhs_require doesn't need to be javascript code.
-jhs_require always inserts the content of the specified file, literally. So method jhs_require 
-is actually a replacemnet. It replaces the statement jhs_require './path_to/file-1.raw' with the content of 
-'file-1.raw'. 
+Firstly, the content in the file called by jhs_require doesn't need to be javascript code, althogh 
+JHS delimiters still are needed. jhs_require always inserts the content of the specified file, 
+literally. So method jhs_require is actually a replacemnet. It replaces the statement jhs_require 
+'./path_to/file-1.raw' with the content of 'file-1.raw'. 
