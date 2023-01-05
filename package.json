@@ -1,0 +1,32 @@
+{
+    "name": "jhs",
+    "description": "A fast and pure NODE.js server-side javascript module, and a simple tool for making dynamic and interactive Web pages",
+    "author": {
+      "name": "Justo Tapiador Garcia",
+      "email": "justo.tapiador@gmail.com"
+    },
+    "version": "12.17.22",
+    "type": "module",
+    "main": "index.js",
+    "module": "./lib/execjhs.js",
+    "repository": "git://github.com/Justo-Tapiador/jhs.git",
+    "license": "MIT",
+    "keywords": [
+        "jhs",
+        "middleware",
+        "markdown",
+        "markup",
+        "html",
+        "dynamic-page"
+    ],
+    "tags": [
+        "jhs",
+        "middleware",
+        "markdown",
+        "markup",
+        "html", "dynamic-page"
+    ],
+    "engines": {
+      "node": ">= 12"
+    }
+  }
