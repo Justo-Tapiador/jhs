@@ -1,5 +1,5 @@
 'use strict';
-var version = 'v' + require('./package.json').version; 
+var version = 'v' + require('./package.json').version;
 var versionGuard = function(version) {
   if (version !== undefined) {
     var message = 'More than one instance of JHS found. ' +
@@ -10,4 +10,7 @@ var versionGuard = function(version) {
 };
 versionGuard(global._jhs);
 global._jhs = version;
-module.exports = require('./lib/execjhs');
+module.exports = {
+  instance:require('./lib/execjhs'),
+  instantiator:require('./lib/jhs_instantiator'),
+}
