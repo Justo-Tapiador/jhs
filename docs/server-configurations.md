@@ -4,7 +4,7 @@
 
 ```javascript
 const path = require('path'),
-       JHS = require('jhs'),
+       JHS = require('jhs').instance,
       http = require("http"),
         fs = require("fs"),
       host = 'http://localhost',
@@ -52,7 +52,7 @@ server.on('request', function(request, response) {
 
 ```javascript
 const path = require('path'),
-       JHS = require('jhs'),
+       JHS = require('jhs').instance,
       http = require("http"),
         fs = require("fs"),
       host = 'http://localhost',
