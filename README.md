@@ -1,6 +1,6 @@
-# JHS
+#  <img src="https://tardigrados.files.wordpress.com/2021/04/jhs.png" alt="JHS Module" width="200" height="200"> JHS MODULE
 
- <img align="center" src="https://tardigrados.files.wordpress.com/2021/04/jhs.png" alt="JHS Module" width="200" height="200">
+
 
 **A fast and pure NODE.js server-side javascript module,  and a simple tool for making dynamic 
 and interactive Web pages.**
