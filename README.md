@@ -26,6 +26,7 @@ The complete docs are hosted here: [JHS Documentation](docs/)
 * [Multilevel hierarchical JHS Mode](docs/multilevel-hierarchy.md)
 * [Ban some required modules](docs/banned-require.md)
 * [The Instantiator](docs/instantiator.md)
+* [Dynamic JHS Pages](docs/dynamic-jhs-pages.md)
 
 
 ## Example
