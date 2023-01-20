@@ -1,6 +1,6 @@
 # JHS
 
-**This is a fast and pure NODE.js server-side javascript module,  and a simple tool for making dynamic 
+**A fast and pure NODE.js server-side javascript module,  and a simple tool for making dynamic 
 and interactive Web pages.**
 
 ## Principles
