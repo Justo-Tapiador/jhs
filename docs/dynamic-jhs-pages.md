@@ -62,7 +62,7 @@ fs.readFileSync('./quotes.txt',  'utf8', function(err, data){
 ```
 In that case, the resulting HTML page might give an empty content in the div element, 
 because the asynchronous function might not be fast enough to print the variable `content`
-filled with tha updating data. So the result might be frustrating:
+filled with the updated data. So, the result might be frustrating:
 ```
 <!DOCTYPE html> 
 <html lang="en-US">
