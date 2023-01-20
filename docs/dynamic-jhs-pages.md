@@ -3,7 +3,7 @@
 It is convenient to name all those dynamic web pages with the same file extensio (`.jhs`). But, bear in mind that 
 all the functions and methods inside the namespaces in any JHS file must be synchronous. If you use asynchronous 
 function/methods, the JHS module might compile the whole script before those asynchronous functions/methods return a 
-value  or finish a task. In that case, the resulteing HTML page would be incomplete. That doesn't mean asynchronous 
+value  or finish a task. In that case, the resulting HTML page would be incomplete. That doesn't mean asynchronous 
 functions/methods always fail in those JHS namespaces. If the are fast enough they can succeed, but their use is not advisable neither 
 reliable. Let's see some examples of JHS web pages:
 
