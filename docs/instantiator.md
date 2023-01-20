@@ -1,6 +1,6 @@
 # The JHS Instantiator
 ## A built-in instantiator and configurator 
->> It arranges the new intances in a standardized and controlled hirachical mode
+It arranges the new intances in a standardized and controlled hirachical mode
 
 ## Examples 
 ### A 3-level hierarchy Server:
@@ -49,4 +49,4 @@ server.on('request', function(request, response) {
          }
   });
 ```
->> As you can see, there is only one asynchronous function (the **execJHS.parse** function), not the hierarchivcall nested ones, because the **instantiator** nests them for you. A difference between the JHS class members **intance** and **instantiator** is the name of the parser function. For the member **instance** that function is called **parseFile**, whereas for **instantiator** it is just **parse** . Another remarkable difference between both members is that in **instantiator** you can't directly define delimiters for the new instances, because they are private members.
+<span style="text-indent: 15em;">As you can see, there is only one asynchronous function (the **execJHS.parse** function), not the hierarchivcall nested ones, because the **instantiator** nests them for you. A difference between the JHS class members **intance** and **instantiator** is the name of the parser function. For the member **instance** that function is called **parseFile**, whereas for **instantiator** it is just **parse** . Another remarkable difference between both members is that in **instantiator** you can't directly define delimiters for the new instances, because they are private members.</span>
