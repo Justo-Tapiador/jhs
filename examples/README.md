@@ -6,7 +6,7 @@ In order to test/watch all these examples, run simple-server.js from command lin
 ```sh
 node simple-server
 ```
-also, you can test it, putting into listening these two example servers:
+also, you can test them, putting into listening these two example servers:
 ```sh
 node 2-level-server
 ```
