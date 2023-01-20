@@ -3,7 +3,7 @@
   <img width="300" height="300" src="https://tardigrados.files.wordpress.com/2021/04/jhs.png" alt="JHS Module">
 </p>
 
-**A fast and pure NODE.js server-side javascript module,  and a simple tool for making dynamic 
+**A fast and pure NODE.js server-side module, and simple tool for making dynamic 
 and interactive Web pages.**
 
 ## Principles
