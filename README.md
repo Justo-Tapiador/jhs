@@ -1,5 +1,5 @@
 # JHS MODULE
-p align="center">
+<p align="center">
   <img width="300" height="300" src="https://tardigrados.files.wordpress.com/2021/04/jhs.png" alt="JHS Module">
 </p>
 
