@@ -1,6 +1,6 @@
 # The JHS Instantiator
 ## A built-in instantiator and configurator 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It arranges the new intances in a standardized and controlled hierarchical mode.
+It arranges the new intances in a standardized and controlled hierarchical mode.
 
 ## Examples 
 ### A 3-level hierarchy Server:
@@ -49,16 +49,16 @@ server.on('request', function(request, response) {
          }
   });
 ```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As you can see, there is only one asynchronous function (the **execJHS.parse** function), not the hierarchical nested ones, because the **instantiator** nests them for you. A difference between the JHS members **intance** and **instantiator** is the name of the parser function. For the member **instance** that function is called **parseFile**, whereas for **instantiator** it is just **parse** . Another remarkable difference between both members is that in **instantiator** you can't directly define delimiters for the new instances, because they are private members.
+As you can see, there is only one asynchronous function (the **execJHS.parse** function), not the hierarchical nested ones, because the **instantiator** nests them for you. A difference between the JHS members **intance** and **instantiator** is the name of the parser function. For the member **instance** that function is called **parseFile**, whereas for **instantiator** it is just **parse** . Another remarkable difference between both members is that in **instantiator** you can't directly define delimiters for the new instances, because they are private members.
 
 ### Some Auxiliary Functions
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You can tell a specific JHS instance to ban cetain modules by means this instantiator function. For example:
+You can tell a specific JHS instance to ban certain modules by means this instantiator function. For example, this one:
 ```javascript 
 execJHS.banModules(3,['attila','bitcore-lib']);
 ```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this case your are banning modules 'attila' and 'bitcore-lib' in the level #3 instance. That means those two libraries can't be required  by any 
-JHS page where #3 level namespace is being used. For instance: if you arrange the following JHS page, after you have banned those modules, 
+In this case, your are banning modules, 'attila' and 'bitcore-lib', in the level #3 namespace. That means those two libraries can't be required  by any 
+JHS page where #3 levels namespaces are being used. For instance: if you arrange the following JHS page, after you have banned those two modules in level #3, 
 ```javascript 
 <?#3jhs
 var a = require('attila');
@@ -70,4 +70,4 @@ hello world!
 </body><html>
 </html>
 ```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It would throw an error, because those two libraries are not allowed to be required in level #3 namespace, but they could be successfully required in other levels
+It would throw an error, because those two libraries are not allowed to be required in level #3 namespaces, but they could be successfully required in other levels.
