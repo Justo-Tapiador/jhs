@@ -1,4 +1,5 @@
 # Banned Require
+## From the JHS instance member
 **You can prevent some NODEjs modules to be loaded in your JHS scripts**
 
 There are two nodejs modules that you are not allowed to require (they are banned by default) in  a JHS script:
@@ -7,6 +8,7 @@ by adding a list of names of modules to be banned in the options JSON, when you 
 a JHS instance in your server script.
 
  ```javascript 
+    const JHS = new JHS().instance;
     const options = {banned_require:['xx-node','lib-y','alt-z']};
     const execjhs = new JHS(options);
  ```
@@ -42,3 +44,17 @@ the resulted webpage will be:
 the error page will be displayed even the alleged function 'liby()' 
 is not called. 
 
+## From the JHS instantiator member
+### Through options
+ ```javascript 
+    const JHS = require('JHS').instantator;
+    const options = {levels:3, banned_require:['xx-node','lib-y','alt-z']};
+    const execjhs = new JHS(options);
+ ```
+### Through banModule function
+```javascript 
+    const JHS = require('JHS').instantator;
+    const options = {levels:3};
+    const execjhs = new JHS(options);
+    execjhs.banModules(['xx-node','lib-y','alt-z']);
+ ```
