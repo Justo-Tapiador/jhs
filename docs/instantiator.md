@@ -53,7 +53,7 @@ As you can see, there is only one asynchronous function (the **execJHS.parse** f
 
 ### Some Auxiliary Functions
 
-You can tell a specific JHS instance to ban certain modules by means this instantiator function. For example, this one:
+1. You can tell a specific JHS instance to ban certain modules by means this instantiator function. For example, this:
 ```javascript 
 execJHS.banModules(3,['attila','bitcore-lib']);
 ```
@@ -71,3 +71,16 @@ hello world!
 </html>
 ```
 It would throw an error, because those two libraries are not allowed to be required in level #3 namespaces, but they could be successfully required in other levels.
+
+2. You can redefine the maximal hierarchical level at any moment you wish, in the server.
+
+Suppose you have defined a 3-level configuration like this 
+```javascript
+ const  JHS = require('jhs').instantiator
+ execJHS  = new JHS({levels:3}),
+```
+then, you can redefine it at run-time in the server to the value you wish, using this function 
+```javascript
+ execJHS  = setMaxLevel{4)
+```
+The JHS module has a top level = 5 that cannot be exceeded, unless you rewrite the JHS module (not recommended).
