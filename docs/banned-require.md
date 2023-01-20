@@ -51,7 +51,7 @@ is not called.
     const options = {levels:3, banned_require:['xx-node','lib-y','alt-z']};
     const execjhs = new JHS(options);
  ```
-### Through banModule function
+### Through banModules function
 ```javascript 
     const JHS = require('JHS').instantiator;
     const options = {levels:3};
