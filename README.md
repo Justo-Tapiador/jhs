@@ -59,7 +59,7 @@ and called, like any other middleware engine:
 
 ```javascript
              ...
-            const   JHS  = require('jhs'),
+            const   JHS  = require('jhs').instance,
                     options = {root:"./wwwroot"},
                     parse_options = {},
                     file = options.root+'\\hello-world.jhs',
