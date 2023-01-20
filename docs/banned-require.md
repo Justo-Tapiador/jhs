@@ -47,13 +47,13 @@ is not called.
 ## From the JHS instantiator member
 ### Through options
  ```javascript 
-    const JHS = require('JHS').instantator;
+    const JHS = require('JHS').instantiator;
     const options = {levels:3, banned_require:['xx-node','lib-y','alt-z']};
     const execjhs = new JHS(options);
  ```
 ### Through banModule function
 ```javascript 
-    const JHS = require('JHS').instantator;
+    const JHS = require('JHS').instantiator;
     const options = {levels:3};
     const execjhs = new JHS(options);
     execjhs.banModules(['xx-node','lib-y','alt-z']);
