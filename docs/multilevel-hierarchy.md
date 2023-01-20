@@ -30,8 +30,8 @@ And, if no delimiters array is provided, the level #0 is assumed as default.
 //Also
 delimiters:['<?jhs','?>'] // without specifing level number, refers to level #0.
 ```
-This configuration of two JHS instances in the server is called a 2-level Hierarchy JHS configuration.
-Once these options are defined, you switch those two instances nested into the server requests event listener, as follows:
+This configuration of two JHS instances in the server is called a wannabe 2-level Hierarchy JHS configuration.
+Once these options are defined, you switch those two instances nested into the server request event listener, as follows:
 ```javascript
 server.on('request', (request, response)=>{
     var realFileName = request.url;
@@ -43,13 +43,13 @@ server.on('request', (request, response)=>{
 	}); 
 });
 ```
-The secomd argument in the function execJHS_1.parseFile is put to 'false' 
-because the variable 'realFileName' is meant a path to a file (with extension 
-'.jhs') in the server root. If realFileName were a string with JHS code content, 
-the second argument should be put to 'true'.This is the case in 'execJHS_0.parseFile', 
-because 'jhsResult1' is assumed to be JHS code, not a path to a file.
-In the JSON object 'flags' (that we put as third argument), you can parse whatever variables and/or constants are suitable for your purpose.
-If your server is not configured a with a 2-level configuration or highier, you can only dispatch JHS webpages in the #0 level (highier levels will yield error).
+The secomd argument in the function `execJHS_1.parseFile` is put to `false` 
+because the variable `realFileName` is meant a path to a file (with extension 
+`.jhs`) in the server root. If `realFileName` were a string with JHS code content, 
+the second argument should be put to true`.This is the case in `execJHS_0.parseFile`, 
+because `jhsResult1` is assumed to be JHS code, not a path to a file.
+In the JSON object `flags` (that we put as third argument), you can parse whatever variables and/or constants are suitable for your purpose.
+If your server is not configured with a 2-level configuration or highier, you can only dispatch JHS webpages in the #0 level (highier levels would yield error).
 An example of a 2-level Hierarchy JHS file would be:
 ```javascript
     <?#1jhs 
@@ -86,6 +86,6 @@ And the resulted HTML code the server responded would be
     </body>
     </html>
 ```
-So, in this example, you have defined (echoed) the variable 'str' fron level #1 to be use as part 
-of the JHS code in level #0.
+So, in this example, you have defined (echoed) the variable `str` fron level #1 namespace to be use as part 
+of the JHS code in level #0 namespace.
 
