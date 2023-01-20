@@ -58,7 +58,7 @@ You can tell a specific JHS instance to ban certain modules by means this instan
 execJHS.banModules(3,['attila','bitcore-lib']);
 ```
 In this case, your are banning modules, 'attila' and 'bitcore-lib', in the level #3 namespace. That means those two libraries can't be required  by any 
-JHS page where #3 levels namespaces are being used. For instance: if you arrange the following JHS page, after you have banned those two modules in level #3, 
+JHS page where #3 level namespaces are being used. For instance: if you arrange the following JHS page, after you have banned those two modules in level #3, 
 ```javascript 
 <?#3jhs
 var a = require('attila');
