@@ -53,7 +53,7 @@ server.on('request', function(request, response) {
 
 ### Some Auxiliary Functions
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You can tell a specific JHS instance to ban cetain modules by means this instantiator function:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You can tell a specific JHS instance to ban cetain modules by means this instantiator function. For example:
 ```javascript 
 execJHS.banModules(3,['attila','bitcore-lib']);
 ```
