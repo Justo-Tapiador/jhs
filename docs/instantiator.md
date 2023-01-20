@@ -53,11 +53,11 @@ server.on('request', function(request, response) {
 
 ### Soma auxiliary functions
 
-You can tell a specific JHS instance to ban cetain modules by means this instantiator function:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You can tell a specific JHS instance to ban cetain modules by means this instantiator function:
 ```javascript 
-execJHS.banModules(3,['attile','bitcore-lib']);
+execJHS.banModules(3,['attila','bitcore-lib']);
 ```
-Inthis case your are banning modules 'attile' and 'bitcore-lib' in the level #3 instance. That means those two libraries can't be required  by any 
+Inthis case your are banning modules 'attila' and 'bitcore-lib' in the level #3 instance. That means those two libraries can't be required  by any 
 JHS page where #3 level namespace is being used. For instance: if you arrange the following JHS page, after you have banned those modules, 
 ```javascript 
 <?#3jhs
@@ -70,4 +70,4 @@ hello world!
 </body><html>
 </html>
 ```
-It would throw an error, because those two libraries are not allowed to be required in level #3 namespace, but they could be successfully required in other levels
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It would throw an error, because those two libraries are not allowed to be required in level #3 namespace, but they could be successfully required in other levels
