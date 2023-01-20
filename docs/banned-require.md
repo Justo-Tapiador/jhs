@@ -51,10 +51,13 @@ is not called.
     const options = {levels:3, banned_require:['xx-node','lib-y','alt-z']};
     const execjhs = new JHS(options);
  ```
+ In this case those modules will be banned in all levels 
+ 
 ### Through banModules function
 ```javascript 
     const JHS = require('JHS').instantiator;
     const options = {levels:3};
     const execjhs = new JHS(options);
-    execjhs.banModules(['xx-node','lib-y','alt-z']);
+    execjhs.banModules(2,['xx-node','lib-y','alt-z']);
  ```
+  In this case those modules will be banned only in level #2 namespace.
