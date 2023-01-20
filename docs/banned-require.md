@@ -1,4 +1,4 @@
-# Banned Require
+# Banned Require Modules
 ## From the JHS instance member
 **You can prevent some NODEjs modules to be loaded in your JHS scripts**
 
