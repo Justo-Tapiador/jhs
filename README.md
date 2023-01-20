@@ -54,7 +54,7 @@ page example, written with JHS, you may call it 'hello-world.jhs':
         </body>
         </html>
 ```
-Secondly, in your NODE.js server script, the JHS module must be required, instantiate 
+Secondly, in your NODE.js server script, the JHS module must be required, instantiated 
 and called, like any other middleware engine:
 
 ```javascript
