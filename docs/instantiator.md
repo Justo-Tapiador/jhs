@@ -83,4 +83,4 @@ then, you can redefine it at run-time in the server to the value you wish, using
 ```javascript
  execJHS  = setMaxLevel{4)
 ```
-The JHS module has a top level = 5 that cannot be exceeded, unless you rewrite the JHS module (not recommended).
+The JHS module has a top level equal to 5 that cannot be exceeded, unless you rewrite the constant `const MAX_LEVELS = 5`in the JHS instantiator script (not recommended).
