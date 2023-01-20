@@ -1,6 +1,6 @@
 # The JHS Instantiator
 ## A built-in instantiator and configurator 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It arranges the new intances in a standardized and controlled hirachical mode
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It arranges the new intances in a standardized and controlled hirachical mode.
 
 ## Examples 
 ### A 3-level hierarchy Server:
