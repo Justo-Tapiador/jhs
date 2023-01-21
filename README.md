@@ -1,6 +1,6 @@
 # JHS MODULE
 <p align="center">
-  <img width="300" height="300" src="https://tardigrados.files.wordpress.com/2021/04/jhs.png" alt="JHS Module">
+  <img width="300" height="300" src="https://user-images.githubusercontent.com/115353781/213853900-db9e19fb-015b-4c52-a6c0-7e0c945ab60e.png" alt="JHS Module">
 </p>
 
 **A fast and pure NODE.js server-side module, and simple tool for making dynamic 
