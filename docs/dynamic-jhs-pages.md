@@ -64,4 +64,9 @@ In that case, the resulting HTML page might give an empty content in the div ele
 </body>
 </html>
 ```
-You may think that functions in JHS namespaces being synchronous is a disadvantage, because they could block the server. They are not, since all client requests are handled by any NODE.js server through asynchronous functions.
+You may think that functions in JHS namespaces being synchronous is a disadvantage, because they could block the server. They are not, since all client requests are handled by any NODE.js server through asynchronous functions, like this one
+```javascript
+  server.on('request', function(request, response) {
+  ...
+});
+```
