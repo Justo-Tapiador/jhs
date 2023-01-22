@@ -8,7 +8,7 @@ and interactive Web pages.**
 
 ## Principles
 
-JHS code is just pure javascript code, processed on a NODE.js web server by a JHS interpreter 
+JHS module is just pure javascript code, processed on a NODE.js web server by a JHS interpreter 
 implemented as a NODE.js module. On a web server, the result of the interpreted and executed 
 JHS code – which may be any type of data, such as generated HTML or binary image data – would 
 form the whole or part of an HTTP response.
