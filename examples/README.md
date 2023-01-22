@@ -3,7 +3,7 @@
 
 * [A hello world! page 🢡 1-level configuration](simple-server/wwwroot/hello-world.jhs) `hello-world.jhs`
 * [A hello world! page 🢡 2-level configuration](simple-server/wwwroot/multilevel-hierarchy.jhs) `multilevel-hierarchy.jhs`
-* [The start page itself 🢡 1-level configuration](simple-server/wwwroot/index.jh) `index.jhs`
+* [The start page itself 🢡 1-level configuration](simple-server/wwwroot/index.jhs) `index.jhs`
 
 ## Test / Watch 
 In order to test/watch all these examples, run simple-server.js from command line in the path `node_modules\jhs\examples\simple-server`:
