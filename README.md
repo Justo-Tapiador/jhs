@@ -2,7 +2,6 @@
 <p align="left">
   <img width="180" height="180" src="https://user-images.githubusercontent.com/115353781/213859341-92a908dc-3892-469b-aaa7-74d6d4978e87.png" alt="JHS Module">
 </p>
-# JHS MODULE
 
 ## Synopsis
 
