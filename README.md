@@ -1,5 +1,5 @@
 # JHS MODULE
-<img src="https://user-images.githubusercontent.com/115353781/213859341-92a908dc-3892-469b-aaa7-74d6d4978e87.png" />
+<img src="https://github.com/Justo-Tapiador/jhs/blob/main/examples/simple-server/wwwroot/images/jhs.png" />
 <p align="center">
   <img width="300" height="300" src="https://user-images.githubusercontent.com/115353781/213859341-92a908dc-3892-469b-aaa7-74d6d4978e87.png" alt="JHS Module">
 </p>
