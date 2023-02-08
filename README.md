@@ -29,7 +29,7 @@ The complete docs are hosted here: [JHS Documentation](docs/)
 * [Ban some required modules](docs/banned-require.md)
 * [The Instantiator](docs/instantiator.md)
 * [Dynamic JHS Pages](docs/dynamic-jhs-pages.md)
-
+* [Using ranks](docs/using-ranks.md)
 
 ## Example
 
