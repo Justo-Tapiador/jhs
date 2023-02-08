@@ -1,6 +1,6 @@
 # Dynamic JHS Web Pages
 
-It is convenient to name all those dynamic web pages with the same file extensio (`.jhs`). But, bear in mind that all the functions and methods inside the namespaces in any JHS file must be synchronous. If you use asynchronous function/methods, the JHS module might compile the whole script before those asynchronous functions/methods return a value  or finish a task. In that case, the resulting HTML page would be incomplete. That doesn't mean asynchronous  functions/methods always fail in those JHS namespaces. If the are fast enough they can succeed, but their use is neither advisable nor reliable. Let's see some examples of JHS web pages:
+It is convenient to name all those dynamic web pages with the same file extension (`.jhs`). But, bear in mind that all the functions and methods inside the namespaces in any JHS file must be synchronous. If you use asynchronous function/methods, the JHS module might compile the whole script before those asynchronous functions/methods returned a value  or finished a task. In that case, the resulting HTML page would be incomplete. That doesn't mean asynchronous  functions/methods always fail in those JHS namespaces. If thety are fast enough they can succeed, but their use is neither advisable nor reliable. Let's see some examples of JHS web pages:
 
 ## A 1-level JHS page, that we will name `example-1.jhs`
 ```javascript
