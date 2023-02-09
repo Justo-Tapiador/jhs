@@ -108,6 +108,9 @@ when level 2 is reached.
 </body>
 </html>
  ```
- A rank=3 would serve into the browser  the original file `mypage.jhs`. 
+ A rank #3 would serve into the browser  the original file `mypage.jhs`. 
+ You have to deal in your server who can do requests with ranks, via query string.
+ 
+ E.g.: users with rank #3 can send requests to access generated JHS scripts up to level 3. 
  
 
