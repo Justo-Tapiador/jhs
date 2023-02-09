@@ -34,7 +34,7 @@ The complete docs are hosted here: [JHS Documentation](docs/)
 
 ## Example
 
-The simplest use of this middleware module involves two parts:
+The simplest way of using this middleware module involves two parts:
 Firstly, write a webpage file with your favorite text editor, and name it with extension `.jhs`. 
 Save it to your web server root directory (or any other folder under the root). Use code 
 delimiters `<?jhs` and `?>` to insert javascript code into de html code (this code will be 
