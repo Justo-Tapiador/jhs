@@ -13,7 +13,7 @@ const  JHS = require('jhs').instantiator;
 /*We can set rank=2 in the initial options, along with levels*/
 const  execJHS  = new JHS({levels:3, rank:2});
 ```
-Or we can set rank=2 by means of the function `setRank(n)` once the instance `execJHS` has been created
+Or we can set rank=2 by means of the function `setRank(n)`, once the instance `execJHS` has been created
 ```javascript
 const  execJHS  = new JHS({levels:3);
 execJHS.setRank(2);
