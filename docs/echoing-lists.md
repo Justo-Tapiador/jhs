@@ -1,4 +1,4 @@
-# Four Ways of echoing JHS lists into an HTML document
+# Four ways of echoing JHS lists into an HTML document
 ```javascript
 <?jhs
     const star_trek = [
