@@ -83,7 +83,7 @@ when level 2 is reached.
 </html>
  ```
  We see that only level 3 has been compiled into level 2. If a rank=0 would have been set 
- then the compilation would have ben complete to the expected HTML document. A rank=1 would produce 
+ then the compilation would have been complete to the expected HTML document. A rank=1 would produce 
  the following partial JHS document:
  ```javascript
  /**
