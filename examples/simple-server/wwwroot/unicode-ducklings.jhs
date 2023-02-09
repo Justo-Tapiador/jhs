@@ -9,6 +9,11 @@
             s[i].innerHTML = num.charAt(0).toUpperCase() + num.slice(1);
         }`
     };
+    /*
+    - How many unicode duckling do you want? 
+    - the request query string will specify the number:
+        https://localhost:4000/hi-2.jhs?n=10 // specifies 10unicode ducklings
+    */
     const url = require('url');  
     const URLSearchParams = url.URLSearchParams;
     var query = url.parse(flags.path).query;
