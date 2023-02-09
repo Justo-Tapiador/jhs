@@ -30,7 +30,7 @@ The complete docs are hosted here: [JHS Documentation](docs/)
 * [The Instantiator](docs/instantiator.md)
 * [Dynamic JHS Pages](docs/dynamic-jhs-pages.md)
 * [Using ranks](docs/using-ranks.md)
-* [Four ways of echoing JHS list into an HTML document](docs/echoing-lists.mdd)
+* [Four ways of echoing JHS list into an HTML document](docs/echoing-lists.md)
 
 ## Example
 
