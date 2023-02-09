@@ -110,8 +110,9 @@ when level 2 is reached.
 </html>
  ```
  A rank #3 would serve into the browser  the original file `mypage.jhs`. 
- You have to deal in your server who can do requests with ranks, via query string.
  
- E.g.: users with rank #3 can send requests to access generated JHS scripts up to level 3. 
+ Establish your own authorizations protocol. You have to deal in your server who can do requests with ranks, via query string.
+ 
+ E.g.: Users with rank #3 can only send requests to access generated JHS scripts up to level 3. 
  
 
