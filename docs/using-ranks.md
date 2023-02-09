@@ -15,6 +15,7 @@ const  execJHS  = new JHS({levels:3, rank:2});
 ```
 Or we can set rank=2 by means of the function `setRank(n)` once the instance `execJHS` has been created
 ```javascript
+const  execJHS  = new JHS({levels:3);
 execJHS.setRank(2);
 ```
 The JHS module starts compiling from the top level (3) to the lowest 0, and
