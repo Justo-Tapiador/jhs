@@ -1,19 +1,13 @@
 <?#1jhs 
-    const n2w ={
-    load_lib:`
+const load_lib = `
 <script src="https://cdn.jsdelivr.net/npm/number-to-words@1.2.4/numberToWords.min.js"></script>`,
-    run_lib:`
+    run_lib = `
         var s = document.getElementsByClassName('n2w');
         for(i=0;i<s.length;i++){
             var num = numberToWords.toWords(parseInt(s[i].innerHTML));
             s[i].innerHTML = num.charAt(0).toUpperCase() + num.slice(1);
-        }`
-    };
-    /*
-    - How many unicode duckling do you want? 
-    - the request query string will specify the number:
-        https://localhost:4000/hi-2.jhs?n=10 // specifies 10unicode ducklings
-    */
+        }`;
+
     const url = require('url');  
     const URLSearchParams = url.URLSearchParams;
     var query = url.parse(flags.path).query;
@@ -24,7 +18,7 @@
     var duckling ='&#129414;'.repeat(N);
     // insert a html break tag every 10 unicode chars
     duckling = duckling.replace(/((.*?;){10})/g,"$1<br>")
-    const title = `The <span class"n2w">${N}</span> Unicode Ducklings:`;  
+    const title = `The <span class="n2w">${N}</span> Unicode Ducklings:`;  
 ?#1>
 <?jhs 
     var str0  = 'Hello world!';
@@ -37,7 +31,7 @@
 <!DOCTYPE html> 
 <html><head>
 <meta charset="utf-8">
-<?#1jhs echo(n2w.load_lib) ?#1>
+<?#1jhs echo(load_lib) ?#1>
 </head>
 <body>
 <div style="text-align:center;">
@@ -48,7 +42,7 @@
 </div>
 <script>
     document.addEventListener("DOMContentLoaded", function(event) {
-        <?#1jhs echo(n2w.run_lib) ?#1>
+        <?#1jhs echo(run_lib) ?#1>
     });
 </script>
 </body>
