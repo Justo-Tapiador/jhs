@@ -1,0 +1,50 @@
+<?#1jhs 
+    const n2w ={
+    load_lib:`
+<script src="https://cdn.jsdelivr.net/npm/number-to-words@1.2.4/numberToWords.min.js"></script>`,
+    run_lib:`
+        var s = document.getElementsByClassName('n2w');
+        for(i=0;i<s.length;i++){
+            var num = numberToWords.toWords(parseInt(s[i].innerHTML));
+            s[i].innerHTML = num.charAt(0).toUpperCase() + num.slice(1);
+        }`
+    };
+    const url = require('url');  
+    const URLSearchParams = url.URLSearchParams;
+    var query = url.parse(flags.path).query;
+    var N = parseInt(Object.fromEntries(new URLSearchParams(query)).n);
+        N = isNaN(N)?3:N;
+        N = N>100?100:N;N = N<1?1:N;
+    // unicode symbol of a duck repeated N times
+    var duckling ='&#129414;'.repeat(N);
+    // insert a html break tag every 10 unicode chars
+    duckling = duckling.replace(/((.*?;){10})/g,"$1<br>")
+    const title = `The <span class"n2w">${N}</span> Unicode Ducklings:`;  
+?#1>
+<?jhs 
+    var str0  = 'Hello world!';
+    var date  = new Date();
+    const pre ='I am proud to introduce you to';
+    var title ='<?#1jhs echo(title)?#1><br>';
+    <?#1jhs echo('var str1="'+duckling+'";')?#1>
+?>
+
+<!DOCTYPE html> 
+<html><head>
+<meta charset="utf-8">
+<?#1jhs echo(n2w.load_lib) ?#1>
+</head>
+<body>
+<div style="text-align:center;">
+<h1><?jhs echo(str0) ?></h1>
+<h2>Today is:</h2> <h3><?jhs echo(date.toString()) ?></h3>
+<h3><?jhs echo(pre) ?></h3>
+<h2><?jhs echo(title+str1) ?></h2> 
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        <?#1jhs echo(n2w.run_lib) ?#1>
+    });
+</script>
+</body>
+</html>
