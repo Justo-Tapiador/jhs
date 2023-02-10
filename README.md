@@ -31,7 +31,7 @@ The complete docs are hosted here: [JHS Documentation](docs/)
 * [Dynamic JHS Pages](docs/dynamic-jhs-pages.md)
 * [Using ranks](docs/using-ranks.md)
 * [Four ways of echoing JHS list into an HTML document](docs/echoing-lists.md)
-* [How to serve Unicode Ducklings to your clients](serving-unicode-ducklings.md)
+* [How to serve Unicode Ducklings to your clients](docs/serving-unicode-ducklings.md)
 
 
 ## Example
