@@ -1,5 +1,4 @@
 <?#1jhs 
-
 const load_lib = `
 <script src="https://cdn.jsdelivr.net/npm/number-to-words@1.2.4/numberToWords.min.js"></script>`;
 const run_lib = `
