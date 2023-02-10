@@ -1,7 +1,8 @@
 <?#1jhs 
+
 const load_lib = `
-<script src="https://cdn.jsdelivr.net/npm/number-to-words@1.2.4/numberToWords.min.js"></script>`,
-    run_lib = `
+<script src="https://cdn.jsdelivr.net/npm/number-to-words@1.2.4/numberToWords.min.js"></script>`;
+const run_lib = `
         var s = document.getElementsByClassName('n2w');
         for(i=0;i<s.length;i++){
             var num = numberToWords.toWords(parseInt(s[i].innerHTML));
@@ -13,11 +14,13 @@ const load_lib = `
     var query = url.parse(flags.path).query;
     var N = parseInt(Object.fromEntries(new URLSearchParams(query)).n);
         N = isNaN(N)?3:N;
-        N = N>100?100:N;N = N<1?1:N;
+        N = N>500?500:N;N = N<1?1:N;
+        m = Math.floor(Math.sqrt(N));
     // unicode symbol of a duck repeated N times
     var duckling ='&#129414;'.repeat(N);
-    // insert a html break tag every 10 unicode chars
-    duckling = duckling.replace(/((.*?;){10})/g,"$1<br>")
+    // insert a html break tag every m unicode chars
+    var regex = new RegExp( "((.*?;){"+m+"})","g" );
+    duckling = duckling.replace(regex,"$1<br>")
     const title = `The <span class="n2w">${N}</span> Unicode Ducklings:`;  
 ?#1>
 <?jhs 
@@ -35,6 +38,7 @@ const load_lib = `
 </head>
 <body>
 <div style="text-align:center;">
+<h1><?#1jhs echo(m) ?#1></h1>
 <h1><?jhs echo(str0) ?></h1>
 <h2>Today is:</h2> <h3><?jhs echo(date.toString()) ?></h3>
 <h3><?jhs echo(pre) ?></h3>
