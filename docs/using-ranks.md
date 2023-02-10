@@ -45,7 +45,7 @@ when level 2 is reached.
           })
  ```
  You can see that the function `execjhs.getRankWarning(base)` return a string with the warning message if `rank > 0`.
- In addition, when `rank > 0` the page will be served in `plain/txt` format, and if `rank == 0`, it  will be served as an HTML page.
+ In addition, when `rank > 0` the page will be served in `text/plain` format, and if `rank == 0`, it  will be served as an HTML page.
  Once that page has been served to the client, the rank is restored to its original value, defined in the initialization options, or  
 to the value the last time it was set with the `setRank(n)` function.
  
