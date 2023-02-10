@@ -29,7 +29,7 @@ when level 2 is reached.
  var n = execJHS.getRank(); // n=2
  ```
  
- If you set the rank into the parse options then that rank will be applied onlu for the request that is being 
+ If you set the rank into the parse options then that rank will be applied only to the request that is being 
  parsed.
   ## Example:
   Suppose you have a server and a request for a page called `mypage.jhs`  is received. So, after the client has been Id'ed,  you want to apply a rank #2 to that requested page. You can do the following inside the server request event function: 
