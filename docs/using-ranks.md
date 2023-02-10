@@ -1,7 +1,10 @@
-Ranks
+
+![ranks-2](https://user-images.githubusercontent.com/115353781/218046305-70baaf69-1f96-4c24-8458-6d77d3162c1e.png)
+
+Ranks!
 =====
 
-**Rank** is a feature of the **instantiator**. It tells the **JHS module**, which is configured in hierarchical levels, 
+**Rank** is a feature of the **JHS instantiator**. It tells the **JHS module**, which is configured in hierarchical levels, 
 when to stop compiling.
 
 ## How it works?
@@ -18,7 +21,7 @@ Or we can set rank=2 by means of the function `setRank(n)`, once the instance `e
 const  execJHS  = new JHS({levels:3);
 execJHS.setRank(2);
 ```
-The JHS module starts compiling from the top level (3) to the lowest 0, and
+The JHS module starts compiling from the top level (3) to the lowest (0), and
 eventually, if that rank value of rank=2 is set, then it will stop compiling 
 when level 2 is reached. 
  We can also get the current rank the JHS is running by means of the function `getRank()`
