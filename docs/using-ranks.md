@@ -28,7 +28,28 @@ when level 2 is reached.
  ```javascript
  var n = execJHS.getRank(); // n=2
  ```
- ## Example:
+ 
+ If you set the rank into the parse options then that rank will be applied onlu for the request that is being 
+ parsed.
+  ## Example:
+  Suppose you have a server and a request for a page called `mypage.jhs`  is received. So, after the client has been Id'ed,  you want to apply a rank #2 to that requested page. You can do the following inside the server request event function: 
+  
+  ```javascript
+          const rank = 2;
+          const base = path.parse(file).base; //file is the path to that resource in your server
+          const source = false; //source  is set to false because that resource is inside a file, not inside a variable or constant.
+ execjhs.parse(file,source, {root:options.root,path:request.url, rank}, function(jhsResult, err){  
+          res.setHeader('Content-Type', !rank?'text/html':'text/plain');
+          jhsResult = rank?execjhs.getRankWarning(base)+jhsResult:jhsResult;
+          return res.end(jhsResult);
+          })
+ ```
+ You can see that the function `execjhs.getRankWarning(base)` return a string with the warning message if `rank > 0`.
+ In addition, when `rank > 0` the page will be served in `plain/txt` format, and if `rank == 0`, it  will be served as an HTML page.
+ Once that page has been served to the client, the rank is restored to its original value, defined in the initialization options, or  
+to the value the last time it was set with the `setRank(n)` function.
+ 
+ ## Example of JHS page file:
  Let `mypage.jhs` be a JHS dynamic page file, where we have defined 3 levels:
  ```javascript
  <?#2jhs
