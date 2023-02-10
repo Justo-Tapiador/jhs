@@ -1,4 +1,4 @@
-# How to serve unicode ducklings to your clients #
+# How to serve Unicode Ducklings to your clients #
 # 🦆🦆🦆🦆🦆🦆🦆 ............ 🦆🦆🦆🦆🦆🦆🦆 #
 ## 1. Configure your server with a 2-level hierarchical JHS instantiation:
 ```javascript
