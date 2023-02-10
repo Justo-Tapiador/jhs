@@ -69,9 +69,8 @@
 </html>
   ```
  ## 4. The client send you a request:
- ```sh
-https://localhost:4000/hi-2.jhs?n=20
- ```
+ `https://localhost:4000/hi-2.jhs?n=20`
+ 
  He's requesting twenty unicode duckling.
  
   ## 5. Serve them!
