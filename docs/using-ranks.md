@@ -9,11 +9,11 @@ when to stop compiling.
 
 ## How it works?
 
-Suppose we want a 3-level hierarchical configuration, and also want to set a rank=2.
+Suppose we want a 3-level hierarchical configuration, and also want to set a rank #2.
 ```javascript
 const  JHS = require('jhs').instantiator;
 
-/*We can set rank=2 in the initial options, along with levels*/
+/*We can set rank #2 in the initial options, along with levels*/
 const  execJHS  = new JHS({levels:3, rank:2});
 ```
 Or we can set rank=2 by means of the function `setRank(n)`, once the instance `execJHS` has been created
@@ -22,7 +22,7 @@ const  execJHS  = new JHS({levels:3);
 execJHS.setRank(2);
 ```
 The JHS module starts compiling from the top level (3) to the lowest (0), and
-eventually, if that rank value of rank=2 is set, then it will stop compiling 
+eventually, if that rank value of rank #2 is set, then it will stop compiling 
 when level 2 is reached. 
  We can also get the current rank the JHS is running by means of the function `getRank()`
  ```javascript
@@ -56,8 +56,8 @@ when level 2 is reached.
 </body>
 </html>
  ```
- Our server is running with a 3-level hierarchy configuration and a rank=2. This means 
- the compilation will stop at level 2, so the resulting compiled document would be:
+ Our server is running with a 3-level hierarchy configuration and a rank #2. This means 
+ the compilation will stop at level 2, so the resulting compiled document would be this:
  ```javascript
  /**
  * WARNING:
@@ -86,8 +86,8 @@ when level 2 is reached.
 </body>
 </html>
  ```
- We see that only level 3 has been compiled into level 2. If a rank=0 would have been set 
- then the compilation would have been complete to the expected HTML document. A rank=1 would produce 
+ We see that only level 3 has been compiled into level 2. If a rank #0 would have been set 
+ then the compilation would have been complete to the expected HTML document. A rank #1 would produce 
  the following partial JHS document:
  ```javascript
  /**
@@ -112,8 +112,8 @@ when level 2 is reached.
 </body>
 </html>
  ```
- A rank #3 would serve into the browser  the original file `mypage.jhs`. 
- 
+ A rank #3 would serve  the original file `mypage.jhs` into the browser. 
+
  Establish your own authorizations protocol. You have to deal in your server who can do requests with ranks, via query string.
  
  E.g.: Users with rank #3 can only send requests to access generated JHS scripts up to level 3. 
