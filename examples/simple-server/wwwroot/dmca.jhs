@@ -1,4 +1,8 @@
 <?jhs
+/*
+ * Asume there is a folder called 'templates' in the root directory, 
+ * from which you can use templates
+*/
 const {queryStringToJSON} = require(ABSPATH +'/util.js'); //ABSPATH points to the folder where util.js is
 var u = require('url');
 var this_path = u.parse(flags.path);
