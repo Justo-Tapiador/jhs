@@ -1,8 +1,10 @@
-# JHS Examples
+# Examples
+## JHS scripts
 **Some examples of usage of the JHS module**
-
 * [A hello world! page 🢡 1-level configuration](simple-server/wwwroot/hello-world.jhs) `hello-world.jhs`
+* [Parsing query strings 🢡 2-level configuration](simple-server/wwwroot/unicode-ducklings.jhs) `unicode-ducklings.jhs`
 * [A hello world! page 🢡 2-level configuration](simple-server/wwwroot/multilevel-hierarchy.jhs) `multilevel-hierarchy.jhs`
+* [Load templates 🢡 1-level configuration](simple-server/wwwroot/dmca.jhs) `dmca.jhs`
 * [The start page itself 🢡 1-level configuration](simple-server/wwwroot/index.jhs) `index.jhs`
 
 ## Test / Watch 
