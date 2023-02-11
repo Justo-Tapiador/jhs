@@ -32,7 +32,7 @@ The complete docs are hosted here: [JHS Documentation](docs/)
 * [Using ranks](docs/using-ranks.md)
 * [Four ways of echoing JHS list into an HTML document](docs/echoing-lists.md)
 * [How to serve Unicode Ducklings to your clients](docs/serving-unicode-ducklings.md)
-* [How to handle error exceptions in a JHS script](docs/handle-error.md)
+* [How to handle error exceptions in a JHS script](docs/handle-errors.md)
 
 ## Example
 
