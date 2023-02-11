@@ -17,5 +17,4 @@ or launch
 node 2-level-instantiator-server
 ```
 then locally visit 
-* `http://localhost:4000`  in your browser, or visit secure
-* `https://localhost:4000` , in order to test `2-level-server.js` or `2-level-instantiator-server.js`
+* `https://localhost:4000`
