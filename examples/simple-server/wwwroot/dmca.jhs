@@ -1,7 +1,8 @@
 <?jhs
 /*
- * Asume there is a folder named 'templates' in the root directory, 
- * from which you can use templates
+ * This JHS script asumes there is a folder named 'templates' in the root directory, 
+ * from which you can use templates, and there is also 
+ * a css file named 'all-movies.css' in the folder 'css'
 */
 const {queryStringToJSON} = require(ABSPATH +'/util.js'); //ABSPATH points to the folder where util.js is
 var u = require('url');
