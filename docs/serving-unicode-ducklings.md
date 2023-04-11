@@ -25,6 +25,7 @@
                 var num = numberToWords.toWords(parseInt(s[i].innerHTML));
                 s[i].innerHTML = num.charAt(0).toUpperCase() + num.slice(1);
             }`;
+    
     const url = require('url');  
     const URLSearchParams = url.URLSearchParams;
     var query = url.parse(flags.path).query;
@@ -32,7 +33,7 @@
         N = isNaN(N)?3:N;
         N = N>500?500:N;N = N<1?1:N;
         k = Math.floor(Math.sqrt(N));
-        m = k<10?N:k;
+        m = k<4?N:k;
     // unicode symbol of a duck repeated N times
     var duckling ='&#129414;'.repeat(N);
     // insert a html break tag every m unicode chars
