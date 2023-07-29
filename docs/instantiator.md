@@ -7,7 +7,7 @@ It arranges the new intances in a standardized and controlled hierarchical mode.
 
 ```javascript
 const path = require('path'),
-       JHS = require('jhs').instantiator,
+       JHS = require('node-jhs').instantiator,
       http = require("http"),
         fs = require("fs"),
       host = 'http://localhost',
@@ -76,7 +76,7 @@ It would throw an error, because those two libraries are not allowed to be requi
 
 Suppose you have defined a 3-level configuration like this 
 ```javascript
- const  JHS = require('jhs').instantiator
+ const  JHS = require('node-jhs').instantiator
  execJHS  = new JHS({levels:3}),
 ```
 then, you can redefine it at run-time in the server to the value you wish, using this function 
