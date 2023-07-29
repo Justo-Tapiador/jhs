@@ -6,7 +6,7 @@
 const os   = require('os'),
       path = require('path'),
       url  = require('url'),
-       JHS = require('jhs').instance;
+       JHS = require('node-jhs').instance;
      https = require("https"),
         fs = require("fs"),
  root_path = path.join(__dirname, 'wwwroot'),
