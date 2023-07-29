@@ -1,6 +1,6 @@
 
 <p align="left">
-  <img width="180" height="180" src="https://user-images.githubusercontent.com/115353781/213859341-92a908dc-3892-469b-aaa7-74d6d4978e87.png" alt="JHS Module">
+  <img width="180" height="180" src="https://github.com/Justo-Tapiador/node-jhs/assets/115353781/fa616814-de3c-45e9-8923-cdc5507da2e4" alt="JHS Module">
 </p>
 
 ## Synopsis
