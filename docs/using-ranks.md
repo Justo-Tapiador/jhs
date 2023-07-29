@@ -11,7 +11,7 @@ when to stop compiling.
 
 Suppose we want a 3-level hierarchical configuration, and also want to set a rank #2.
 ```javascript
-const  JHS = require('jhs').instantiator;
+const  JHS = require('node-jhs').instantiator;
 
 /*We can set rank #2 in the initial options, along with levels*/
 const  execJHS  = new JHS({levels:3, rank:2});
