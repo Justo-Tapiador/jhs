@@ -2,7 +2,7 @@
 # 🦆🦆🦆🦆🦆🦆🦆 ............ 🦆🦆🦆🦆🦆🦆🦆 #
 ## 1. Configure your server with a 2-level hierarchical JHS instantiation:
 ```javascript
- const JHS = require('jhs').instantiator;
+ const JHS = require('node-jhs').instantiator;
  const execJHS = new JHS({levels:2});
 ```
 ## 2. Inside your server `event request function`, write this middleware:
