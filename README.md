@@ -18,7 +18,7 @@ form the whole or part of an HTTP response.
 ## Get Started
 
 ```sh
-npm install jhs
+npm install node-jhs
 ```
 
 ## Documentation
