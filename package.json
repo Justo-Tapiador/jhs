@@ -1,5 +1,5 @@
 {
-    "name": "jhs",
+    "name": "node-jhs",
     "description": "A fast and pure NODE.js server-side javascript module, and a simple tool for making dynamic and interactive Web pages",
     "author": {
       "name": "Justo Tapiador Garcia",
@@ -9,9 +9,10 @@
     "type": "module",
     "main": "index.js",
     "module": "./lib/execjhs.js",
-    "repository": "git://github.com/Justo-Tapiador/jhs.git",
+    "repository": "git://github.com/Justo-Tapiador/node-jhs.git",
     "license": "MIT",
     "keywords": [
+        "node-jhs",
         "jhs",
         "middleware",
         "markdown",
