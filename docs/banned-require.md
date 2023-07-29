@@ -47,7 +47,7 @@ is not called.
 ## From the JHS instantiator member
 ### Through options
  ```javascript 
-    const JHS = require('JHS').instantiator;
+    const JHS = require('node-jhs').instantiator;
     const options = {levels:3, banned_require:['xx-node','lib-y','alt-z']};
     const execjhs = new JHS(options);
  ```
@@ -55,7 +55,7 @@ is not called.
  
 ### Through banModules function
 ```javascript 
-    const JHS = require('JHS').instantiator;
+    const JHS = require('node-jhs').instantiator;
     const options = {levels:3};
     const execjhs = new JHS(options);
     execjhs.banModules(2,['xx-node','lib-y','alt-z']);
